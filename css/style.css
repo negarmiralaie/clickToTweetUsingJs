@@ -45,6 +45,7 @@ main section.content .tweetSec form textarea {
   margin: 1.5rem 0;
   border-radius: 10px;
   border: solid var(--twitterBlue) 3px;
+  padding: 1rem;
 }
 
 main section.content .tweetSec .buttonSec {
