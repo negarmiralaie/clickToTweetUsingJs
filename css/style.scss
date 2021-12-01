@@ -1,3 +1,49 @@
-:root{
+:root {
     --twitterBlue: #53A8E9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #eee;
+    text-align: center;
+    padding: 2rem 0;
+
+    section.content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .tweetSec {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            form textarea {
+                margin: 1.5rem 0;
+                border-radius: 10px;
+                border: solid var(--twitterBlue) 3px;
+            }
+
+            .buttonSec {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                font-size: 1em;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    background-color: var(--twitterBlue);
+                    padding: 1rem;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
 }
