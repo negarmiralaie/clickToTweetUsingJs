@@ -1,18 +1,18 @@
 const textarea = document.querySelector("textarea");
 const button = document.querySelector(".btn");
-const limit = document.querySelector("span");
+const limit = document.querySelector(".limit");
 const max = 50;
 
 const updateLimit = () => {
     limit.textContent = max;
     textarea.addEventListener("input", () => {
-        const userInputLength = textarea.value.length;
+        let userInputLength = textarea.value.length;
         limit.textContent = max - userInputLength;
         if (userInputLength > max) {
-            btn.disabled = true;
+            button.disabled = true;
             limit.style.color = "red";
         } else {
-            btn.disabled = false;
+            button.disabled = false;
             limit.color = "black";
         }
     })
