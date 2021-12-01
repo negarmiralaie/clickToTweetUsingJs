@@ -10,11 +10,14 @@ const updateLimit = () => {
         limit.textContent = max - userInputLength;
         if (userInputLength > max) {
           button.disabled = true;
+          button.style.cursor = "not-allowed";
           limit.style.color = "red";
         } else {
           button.disabled = false;
+          button.style.cursor = "pointer";
           limit.style.color = "black";
         }
+        console.log(document.querySelector(".btn").style.cursor);
     });
 };
 
