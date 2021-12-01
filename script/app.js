@@ -1,7 +1,7 @@
 const textarea = document.querySelector("textarea");
 const button = document.querySelector(".btn");
 const limit = document.querySelector(".limit");
-const max = 50;
+let max = 50;
 
 const updateLimit = () => {
     limit.textContent = max;
@@ -20,7 +20,7 @@ const updateLimit = () => {
 
 updateLimit();
 
-button.addEventListener("click", event => {
+btton.addEventListener("click", event => {
     event.preventDefault();
     tweet();
 })
@@ -30,3 +30,6 @@ const tweet = () => {
     // opens a new window
     window.open(`${tweetInput}${textarea.value}`);
 }
+
+
+

@@ -37,12 +37,13 @@ main {
                 gap: 1rem;
                 font-size: 1em;
 
-                a {
+                button{
                     text-decoration: none;
                     color: white;
                     background-color: var(--twitterBlue);
                     padding: 1rem;
                     border-radius: 10px;
+                    border: none;
                 }
             }
         }

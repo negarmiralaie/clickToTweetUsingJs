@@ -62,11 +62,12 @@ main section.content .tweetSec .buttonSec {
   font-size: 1em;
 }
 
-main section.content .tweetSec .buttonSec a {
+main section.content .tweetSec .buttonSec button {
   text-decoration: none;
   color: white;
   background-color: var(--twitterBlue);
   padding: 1rem;
   border-radius: 10px;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
