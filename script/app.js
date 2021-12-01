@@ -20,7 +20,7 @@ const updateLimit = () => {
 
 updateLimit();
 
-btton.addEventListener("click", event => {
+button.addEventListener("click", event => {
     event.preventDefault();
     tweet();
 })
